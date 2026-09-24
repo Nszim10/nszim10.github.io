@@ -3,49 +3,599 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nafis Sadik Zim | Mechanical Engineer & Researcher</title>
+  <title>Nafis Sadik Zim | Mechanical Engineer &amp; Researcher</title>
+  <meta name="description" content="Nafis Sadik Zim — Lecturer in Mechanical Engineering at SUST. Research in molecular dynamics, heat transfer, DFT and nanoscale simulation."/>
+  <meta name="author" content="Nafis Sadik Zim"/>
+  <meta name="theme-color" content="#0d1b2a"/>
+  <link rel="canonical" href="https://nszim10.github.io/"/>
+
+  <!-- Social link previews (LinkedIn, Facebook, X, WhatsApp…) -->
+  <meta property="og:type" content="profile"/>
+  <meta property="og:title" content="Nafis Sadik Zim | Mechanical Engineer &amp; Researcher"/>
+  <meta property="og:description" content="Lecturer, Dept. of Mechanical Engineering, SUST. Molecular dynamics, heat transfer &amp; nanoscale simulation."/>
+  <meta property="og:url" content="https://nszim10.github.io/"/>
+  <meta property="og:image" content="https://nszim10.github.io/formalpic.jpg"/>
+  <meta name="twitter:card" content="summary"/>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230d1b2a'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23c8973a'%3EZ%3C/text%3E%3C/svg%3E"/>
+  <link rel="apple-touch-icon" href="formalpic.jpg"/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- Structured data: helps Google show your profile correctly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nafis Sadik Zim",
+    "jobTitle": "Lecturer",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Shahjalal University of Science and Technology (SUST)"
+    },
+    "alumniOf": "Bangladesh University of Engineering and Technology (BUET)",
+    "email": "mailto:nszim-mee@sust.edu",
+    "url": "https://nszim10.github.io/",
+    "image": "https://nszim10.github.io/formalpic.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/nafis-sadik-zim/",
+      "https://www.sust.edu/departments/mee/faculty/nszim-mee@sust.edu"
+    ],
+    "knowsAbout": ["Molecular Dynamics", "Heat Transfer", "Density Functional Theory", "Machine Learning", "Solar Thermal Systems"]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <div id="nav-placeholder"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Sections -->
-  <div id="home-placeholder"></div>
-  <div id="about-placeholder"></div>
-  <div id="research-placeholder"></div>
-  <div id="publications-placeholder"></div>
-  <div id="teaching-placeholder"></div>
-  <div id="cv-placeholder"></div>
-  <div id="contact-placeholder"></div>
+  <!-- ─────────────────────────────────────────
+     NAVIGATION
+     Edit: nav links, your name/logo
+  ───────────────────────────────────────── -->
+  <nav id="site-nav" aria-label="Main">
+    <a href="#home" class="nav-logo">N. S. Zim</a>
+    <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Footer -->
+  <main id="main">
+
+  <!-- ─────────────────────────────────────────
+     HOME
+     Edit: your name, title, subtitle, focus pills, CTA button, photo
+  ───────────────────────────────────────── -->
+  <section id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-accent-bar"></div>
+
+    <!-- Two-column layout: text left, photo right -->
+    <div class="hero-inner">
+
+      <!-- LEFT: text content -->
+      <div class="hero-content">
+        <div class="hero-tag">Mechanical Engineer &amp; Researcher</div>
+        <h1>Nafis Sadik<br><span class="hero-title-italic">Zim</span></h1>
+        <p class="hero-subtitle">Lecturer · Department of Mechanical Engineering · SUST</p>
+
+        <!-- Focus area pills — add or remove as needed -->
+        <div class="hero-focus">
+          <span class="hero-pill">Molecular Dynamics</span>
+          <span class="hero-pill">Heat Transfer</span>
+          <span class="hero-pill">DFT</span>
+          <span class="hero-pill">LAMMPS</span>
+          <span class="hero-pill">Machine Learning</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#research" class="hero-cta">View Research</a>
+          <a href="#contact" class="hero-cta hero-cta-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: your photo (formalpic.jpg in the repo root) -->
+      <div class="hero-photo">
+        <img src="formalpic.jpg" alt="Portrait of Nafis Sadik Zim" width="260" height="260" fetchpriority="high"/>
+      </div>
+
+    </div>
+
+    <a href="#about" class="hero-scroll">
+      <span class="scroll-line"></span>
+      Scroll to explore
+    </a>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+     ABOUT
+     Edit: contact info, bio paragraphs, interest tags, education, awards
+  ───────────────────────────────────────── -->
+  <section id="about">
+    <div class="section-label reveal">01 — About Me</div>
+    <div class="about-grid">
+
+      <!-- LEFT CARD: contact + credentials -->
+      <div class="reveal">
+        <div class="about-card">
+          <div class="about-name">Nafis Sadik Zim</div>
+          <div class="about-role">Lecturer · Dept. of ME · SUST</div>
+
+          <div class="about-contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:nszim-mee@sust.edu">nszim-mee@sust.edu</a>
+          </div>
+
+          <div class="about-contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+            <a href="tel:+8801989931948">+880 1989-931948</a>
+          </div>
+
+          <div class="about-contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://www.linkedin.com/in/nafis-sadik-zim/" target="_blank" rel="noopener">linkedin.com/in/nafis-sadik-zim</a>
+          </div>
+
+          <div class="about-contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+            <a href="https://www.sust.edu/departments/mee/faculty/nszim-mee@sust.edu" target="_blank" rel="noopener">Faculty Profile · SUST</a>
+          </div>
+
+          <div class="about-divider"></div>
+
+          <div class="about-cred-label">Education</div>
+          <div class="about-cred">
+            <strong>B.Sc. in Mechanical Engineering (Hons.)</strong>
+            Bangladesh University of Engineering &amp; Technology (BUET)<br>
+            CGPA: 3.78 / 4.00 · 2019–2024
+          </div>
+
+          <div class="about-divider"></div>
+
+          <div class="about-cred-label">Honours</div>
+          <div class="about-cred">
+            University Merit Scholarship (×2)<br>
+            Dean's List Award (×2 academic years)
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: bio text + interest tags -->
+      <div class="reveal">
+        <h2>Engineer. Researcher.<br><em>Lifelong Learner.</em></h2>
+        <div class="about-bio">
+          <p>I am a Mechanical Engineering graduate from BUET and currently a Lecturer at the Department of Mechanical Engineering, SUST. My work is primarily focused on simulation and computational analysis — particularly in molecular dynamics and heat transfer.</p>
+          <p>I am interested in understanding how systems behave at different scales, from nanoscale materials to practical engineering applications. During my undergraduate studies, I worked on thermal conductivity analysis of silicon nanowires and later became involved in research related to solar thermal systems.</p>
+          <p>Alongside teaching, I continue to learn and sharpen my research skills. I am particularly drawn to advanced simulation tools and plan to pursue a PhD in the future.</p>
+          <p class="about-motto">I prefer to keep things simple: learn deeply, work honestly, and improve step by step.</p>
+        </div>
+
+        <!-- At-a-glance numbers — update as they change -->
+        <div class="stats">
+          <div class="stat"><span class="stat-num">2</span><span class="stat-label">Publications</span></div>
+          <div class="stat"><span class="stat-num">4</span><span class="stat-label">Courses Taught</span></div>
+          <div class="stat"><span class="stat-num">3.78</span><span class="stat-label">CGPA · BUET</span></div>
+        </div>
+
+        <!-- Interest tags — add or remove as needed -->
+        <div class="interests-grid">
+          <span class="interest-tag">Molecular Dynamics</span>
+          <span class="interest-tag">DFT</span>
+          <span class="interest-tag">Machine Learning</span>
+          <span class="interest-tag">Heat Transfer</span>
+          <span class="interest-tag">Nanoscale Simulation</span>
+          <span class="interest-tag">Solar Thermal</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+     RESEARCH & PROJECTS
+     Edit: add/remove project cards, change titles, descriptions, tags
+  ───────────────────────────────────────── -->
+  <section id="research">
+    <div class="section-label reveal">02 — Research &amp; Projects</div>
+    <h2 class="reveal">Work That<br><em>Drives Me</em></h2>
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-type">Undergraduate Thesis</div>
+        <h3 class="project-title">Thermal Conductivity of Silicon Nanowires — Effect of Void Shapes</h3>
+        <p class="project-desc">Comparative analysis of how different void geometries affect the thermal conductivity of silicon nanowires using molecular dynamics simulation. Conducted under Prof. Dr. A. K. M. Monjur Morshed at BUET.</p>
+        <div class="project-tags">
+          <span class="project-tag">LAMMPS</span>
+          <span class="project-tag">Molecular Dynamics</span>
+          <span class="project-tag">Nanoscale</span>
+          <span class="project-tag">Heat Transfer</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-type">Research</div>
+        <h3 class="project-title">Solar Thermal Collector with PID Controllers</h3>
+        <p class="project-desc">Contributed to a study on performance enhancement of a vented quarter-circular solar thermal collector using proportional, PI, and PID controllers. Published in Applied Thermal Engineering (2025).</p>
+        <div class="project-tags">
+          <span class="project-tag">Solar Thermal</span>
+          <span class="project-tag">PID Control</span>
+          <span class="project-tag">CFD</span>
+          <span class="project-tag">Energy</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-type">Undergraduate Project</div>
+        <h3 class="project-title">Food Delivery Drone</h3>
+        <p class="project-desc">Designed and developed an autonomous drone system capable of GPS-based navigation for efficient food delivery applications.</p>
+        <div class="project-tags">
+          <span class="project-tag">Autonomous Systems</span>
+          <span class="project-tag">GPS Navigation</span>
+          <span class="project-tag">Embedded</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-type">Undergraduate Project</div>
+        <h3 class="project-title">Twisted Double Pipe Heat Exchanger</h3>
+        <p class="project-desc">Designed, constructed, and tested a double-tube heat exchanger with twisted fins. Simulated and validated in SOLIDWORKS and HTRI for thermal performance evaluation.</p>
+        <div class="project-tags">
+          <span class="project-tag">SOLIDWORKS</span>
+          <span class="project-tag">HTRI</span>
+          <span class="project-tag">Heat Exchanger</span>
+          <span class="project-tag">Thermal Analysis</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-type">Industrial Training</div>
+        <h3 class="project-title">Haripur 360MW Combined Cycle Power Plant</h3>
+        <p class="project-desc">Hands-on industrial training at Haripur CCPP under Performance Engineer Muhammad Mahabubur Rashid Khan. Gained exposure to large-scale power plant operations in Narayanganj, Bangladesh.</p>
+        <div class="project-tags">
+          <span class="project-tag">Power Plant</span>
+          <span class="project-tag">Combined Cycle</span>
+          <span class="project-tag">Industrial</span>
+        </div>
+      </article>
+
+      <!-- Add more cards by copying an <article class="project-card"> block above -->
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+     PUBLICATIONS
+     Edit: add/remove pub-card blocks, update DOI links, authors, journal names
+  ───────────────────────────────────────── -->
+  <section id="publications">
+    <div class="section-label reveal">03 — Publications</div>
+    <h2 class="reveal">Research<br><em>Output</em></h2>
+
+    <div class="pub-list">
+
+      <article class="pub-card reveal">
+        <div class="pub-year">2025</div>
+        <div>
+          <span class="pub-type">Journal Article</span>
+          <h3 class="pub-title">Performance enhancement of a vented quarter-circular solar thermal collector using proportional, proportional-integral, and proportional-integral-derivative controllers</h3>
+          <div class="pub-authors">
+            Md. Ishraq Alam Shithil, Amio Pronoy Das Ritwik, Nayeem Uddin Ahmed,
+            Raian Haider Chowdhury, Md. Rafat Al Razy Rafi,
+            <strong class="pub-me">Nafis Sadik Zim</strong>, Sumon Saha
+          </div>
+          <div class="pub-journal">Applied Thermal Engineering (2025)</div>
+          <a href="https://doi.org/10.1016/j.applthermaleng.2025.126127" target="_blank" rel="noopener" class="pub-link">
+            DOI: 10.1016/j.applthermaleng.2025.126127
+          </a>
+        </div>
+      </article>
+
+      <article class="pub-card reveal">
+        <div class="pub-year">2024</div>
+        <div>
+          <span class="pub-type">Conference Paper</span>
+          <h3 class="pub-title">Comparative Analysis of Different Void Shapes on Thermal Conductivity of Silicon Nanowires</h3>
+          <div class="pub-authors">
+            Aninda Dey, <strong class="pub-me">Nafis Sadik Zim</strong>,
+            A.K.M. Monjur Morshed, Titan C. Paul
+          </div>
+          <div class="pub-journal">ASME International Mechanical Engineering Congress &amp; Exposition (IMECE 2024)</div>
+          <a href="https://doi.org/10.1115/IMECE2024-145893" target="_blank" rel="noopener" class="pub-link">
+            DOI: 10.1115/IMECE2024-145893
+          </a>
+        </div>
+      </article>
+
+      <!-- Add more publications by copying an <article class="pub-card"> block above -->
+
+    </div>
+
+    <div class="thesis-block reveal">
+      <div class="thesis-label">Undergraduate Thesis</div>
+      <div class="thesis-title">Comparative Analysis of Different Void Shapes on the Thermal Conductivity of Silicon Nanowire</div>
+      <div class="thesis-supervisor">Supervisor: Prof. Dr. A. K. M. Monjur Morshed, Department of Mechanical Engineering, BUET</div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+     TEACHING
+     Edit: courses taught, institution, dates, contributions
+  ───────────────────────────────────────── -->
+  <section id="teaching">
+    <div class="section-label reveal">04 — Teaching</div>
+    <h2 class="reveal">Academic<br><em>Responsibilities</em></h2>
+    <div class="teaching-grid">
+
+      <div class="teaching-card reveal">
+        <div class="teaching-inst">SUST · Dept. of ME</div>
+        <h3 class="teaching-title">Lecturer</h3>
+        <div class="teaching-date">June 2025 – Present</div>
+        <ul class="course-list">
+          <li>Machine Design</li>
+          <li>Refrigeration, Air Conditioning &amp; Building Mechanical Systems</li>
+          <li>Mechanics of Machineries</li>
+          <li>Production Process</li>
+          <!-- Add more courses here -->
+        </ul>
+      </div>
+
+      <div class="teaching-card reveal">
+        <div class="teaching-inst">Lab Development</div>
+        <h3 class="teaching-title">Notable Contributions</h3>
+        <div class="teaching-date">SUST · 2025</div>
+        <ul class="course-list">
+          <li>Prepared laboratory setups for arc and MIG welding</li>
+          <li>Gyroscope and governor operation labs</li>
+          <li>Rotary mass balancing setup</li>
+          <li>Machine shop practice environments</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+     CV / RESUME
+     Edit: education, experience, awards, skills
+  ───────────────────────────────────────── -->
+  <section id="cv">
+    <div class="section-label reveal">05 — CV / Resume</div>
+    <h2 class="reveal">Academic &amp;<br><em>Professional Record</em></h2>
+
+    <div class="cv-grid">
+
+      <div class="reveal">
+        <h3 class="cv-section-title">Education</h3>
+        <div class="cv-item">
+          <div class="cv-item-title">B.Sc. in Mechanical Engineering (Hons.)</div>
+          <div class="cv-item-sub">Bangladesh University of Engineering &amp; Technology (BUET)</div>
+          <div class="cv-item-sub">CGPA: 3.78 / 4.00</div>
+          <div class="cv-item-date">July 2019 – June 2024 · Dhaka, Bangladesh</div>
+        </div>
+
+        <h3 class="cv-section-title cv-section-spaced">Experience</h3>
+        <div class="cv-item">
+          <div class="cv-item-title">Lecturer</div>
+          <div class="cv-item-sub">Department of Mechanical Engineering, SUST</div>
+          <div class="cv-item-date">June 2025 – Present</div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-item-title">Industrial Trainee</div>
+          <div class="cv-item-sub">Haripur 360MW Combined Cycle Power Plant, Narayanganj</div>
+          <div class="cv-item-date">November 2023</div>
+        </div>
+
+        <h3 class="cv-section-title cv-section-spaced">Awards</h3>
+        <div class="cv-item">
+          <div class="cv-item-title">University Merit Scholarship</div>
+          <div class="cv-item-sub">BUET · Awarded twice</div>
+        </div>
+        <div class="cv-item">
+          <div class="cv-item-title">Dean's List Award</div>
+          <div class="cv-item-sub">BUET · 2 academic years</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h3 class="cv-section-title">Technical Skills</h3>
+        <div class="skills-section">
+          <div class="skill-group">
+            <div class="skill-group-label">Simulation</div>
+            <div class="skill-tags">
+              <span class="skill-tag">LAMMPS</span>
+              <span class="skill-tag">COMSOL Multiphysics</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Modelling</div>
+            <div class="skill-tags">
+              <span class="skill-tag">SOLIDWORKS</span>
+              <span class="skill-tag">AutoCAD</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Programming</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">MATLAB</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Visualization</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Tecplot 360</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="cv-section-title cv-section-spaced">Research Interests</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Molecular Dynamics</span>
+          <span class="skill-tag">DFT</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Heat Transfer</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CV download button.
+         To enable: upload your CV as "cv.pdf" to the repo root, then delete
+         the "hidden" attribute below. -->
+    <div class="cv-download-row" hidden>
+      <a href="cv.pdf" class="btn-outline" download>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        Download Full CV (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────
+     CONTACT
+     Edit: contact links, form action URL (Formspree)
+  ───────────────────────────────────────── -->
+  <section id="contact">
+    <div class="section-label reveal">06 — Contact</div>
+    <h2 class="reveal">Get In<br><em>Touch</em></h2>
+
+    <div class="contact-layout">
+
+      <div class="reveal">
+        <p class="contact-text">
+          Whether you're interested in collaboration, research discussions, or just want to connect —
+          feel free to reach out. I'm always open to meaningful conversations.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:nszim-mee@sust.edu" class="contact-link-item">
+            <svg class="contact-link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">nszim-mee@sust.edu</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/nafis-sadik-zim/" target="_blank" rel="noopener" class="contact-link-item">
+            <svg class="contact-link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">nafis-sadik-zim</span>
+            </div>
+          </a>
+          <a href="https://www.sust.edu/departments/mee/faculty/nszim-mee@sust.edu" target="_blank" rel="noopener" class="contact-link-item">
+            <svg class="contact-link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+            <div>
+              <span class="contact-link-label">Faculty Page</span>
+              <span class="contact-link-value">SUST · MEE Dept.</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact form (Formspree). Change the ID in the action URL to use a different form. -->
+      <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xojreqdo" method="POST">
+        <div class="form-group">
+          <label class="form-label" for="cf-name">Your Name</label>
+          <input class="form-input" id="cf-name" type="text" name="name" placeholder="John Doe" autocomplete="name" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-email">Email Address</label>
+          <input class="form-input" id="cf-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-message">Message</label>
+          <textarea class="form-textarea" id="cf-message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+        <!-- Spam honeypot: real visitors never see or fill this -->
+        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+    </div>
+  </section>
+
+  </main>
+
   <footer>
-    © 2025 Nafis Sadik Zim · Lecturer, SUST · Built with GitHub Pages
+    © <span id="year">2026</span> Nafis Sadik Zim · Lecturer, SUST
+    <a href="#home" class="back-to-top">Back to top ↑</a>
   </footer>
 
   <script>
-    // Loads each section HTML file into its placeholder
-    const sections = [
-      { id: 'nav-placeholder',          file: 'sections/nav.html' },
-      { id: 'home-placeholder',         file: 'sections/home.html' },
-      { id: 'about-placeholder',        file: 'sections/about.html' },
-      { id: 'research-placeholder',     file: 'sections/research.html' },
-      { id: 'publications-placeholder', file: 'sections/publications.html' },
-      { id: 'teaching-placeholder',     file: 'sections/teaching.html' },
-      { id: 'cv-placeholder',           file: 'sections/cv.html' },
-      { id: 'contact-placeholder',      file: 'sections/contact.html' },
-    ];
+    // Current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    sections.forEach(({ id, file }) => {
-      fetch(file)
-        .then(res => res.text())
-        .then(html => {
-          document.getElementById(id).innerHTML = html;
+    // Mobile menu toggle
+    const nav = document.getElementById('site-nav');
+    const toggle = nav.querySelector('.nav-toggle');
+    const setMenu = open => {
+      nav.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+    toggle.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+    nav.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
+    // Highlight the nav link for the section currently on screen
+    const links = [...nav.querySelectorAll('.nav-links a')];
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section[id]').forEach(s => spy.observe(s));
+
+    // Fade content in as it scrolls into view
+    document.documentElement.classList.add('js');
+    const reveal = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          reveal.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => reveal.observe(el));
+
+    // Send the contact form without leaving the page
+    const form = document.getElementById('contact-form');
+    const status = form.querySelector('.form-status');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const button = form.querySelector('button');
+      button.disabled = true;
+      status.className = 'form-status';
+      status.textContent = 'Sending…';
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
         });
+        if (!res.ok) throw new Error();
+        form.reset();
+        status.classList.add('ok');
+        status.textContent = 'Thanks! Your message has been sent. I will get back to you soon.';
+      } catch {
+        status.classList.add('err');
+        status.textContent = 'Sorry, something went wrong. Please email me directly at nszim-mee@sust.edu.';
+      } finally {
+        button.disabled = false;
+      }
     });
   </script>
 
